@@ -37,7 +37,7 @@ const GetWeatherData = (props:any) => {
  
     //useEffect call get data after component render
     useEffect(() => {
-        // getweatherData();    
+        getDefaultData();    
     }, [])
  
     //Get Weather Icon on Condition
@@ -61,7 +61,22 @@ const GetWeatherData = (props:any) => {
                     seticon(icon => weathericon.Cloud);
             }
         }
-     
+         //Get Default weather data
+
+         const getDefaultData = () =>
+    {
+        axios.get(`http://api.openweathermap.org/data/2.5/weather?q=Pune,IN&appid=${API_Key}`)
+        .then(res=>{setcity(city => `${res.data.name},${res.data.sys.country}`);
+        setcountry(country => res.data.sys.country);
+        setweatherDescription(weatherDescription => res.data.weather[0].description);
+        setcelcious(celcious => celcioustemp(res.data.main.temp));
+        settemp_min(temp_min => celcioustemp(res.data.main.temp_min));
+        settemp_max(temp_max => celcioustemp(res.data.main.temp_max));
+        getWeatherIcon(weathericon, res.data.weather[0].id);
+        props.loaddata(res.data.weather[0].id);
+        console.log(res);})
+        .catch(err=>console.log(err))
+    }
         //Get Data From Weather API
      
         const getweatherData = (e: any) => {

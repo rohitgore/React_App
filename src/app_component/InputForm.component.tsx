@@ -1,5 +1,5 @@
 import React from 'react';
-// import './SCSS/InputForm'
+import './formstyle.scss';
  
 const error=()=>
 {
@@ -14,7 +14,7 @@ const InputForm = (props:any) => {
         <div>
             <div className="container py-2">
               <div>{props.error ? error() : null}</div>
-               <form onSubmit={props.loadweather}>
+               <form className="inputform" onSubmit={props.loadweather}>
                <div className="row">
                     <div className="offset-md-4 col-md-2">
                         <input type="text" name="city" placeholder="City name" className="form-control" autoComplete="off" />

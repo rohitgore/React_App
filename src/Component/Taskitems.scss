@@ -13,7 +13,7 @@
         // padding: 10px;
         position: relative;
     }
-    span{
+    .icon{
        position: absolute;
        right: 10px;
        cursor: pointer;
@@ -30,10 +30,17 @@
         color: black;
         height: 30px;
         margin: 5px;
-
+    }
+    .svg-inline--fa {
+        display: inline-block;
+        font-size: 18px;
+        height: 1em;
+        overflow: visible;
+        vertical-align: -0.125em;
     }
 }
 .heading{
     margin: auto;
     text-align: center;
+    padding:0;
 }
