@@ -12,7 +12,7 @@ library.add(faCoffee,faCloudRain,faCloudSunRain,faCloud,faPooStorm,faShower,faCl
  
 function MainWeather() 
 {
-  document.body.style.backgroundImage="url('atmosphere.jpg')"
+  // document.body.style.backgroundImage="url('atmosphere.jpg')"
   const backgroundChange = (id:any) =>
   {
     console.log(id);

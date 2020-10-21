@@ -9,6 +9,8 @@ library.add(faTrash);
 
 function ToDo() {
 
+  document.body.style.backgroundImage="url('Background.jpg')"
+
   return (
     <div className="App"> 
       <Taskinfo></Taskinfo>

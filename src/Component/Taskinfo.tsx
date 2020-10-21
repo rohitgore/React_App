@@ -30,7 +30,7 @@ class Taskinfo extends Component<taskvalue,any> {
         event.preventDefault();
         const newInput = this.state.item;
         console.log(newInput);
-        if (newInput !== "") 
+        if (newInput.key !== "") 
         {
             const newInputs = [...this.state.task, newInput]
             this.setState({
@@ -42,6 +42,10 @@ class Taskinfo extends Component<taskvalue,any> {
                 }
             })
             console.log(newInputs);
+        }
+        else{
+            
+            alert("write task name");
         }
     }
     
