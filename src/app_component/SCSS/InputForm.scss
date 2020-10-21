@@ -1,0 +1,13 @@
+form input:focus{
+    box-shadow: none !important;
+    background-color: transparent !important;
+}
+ 
+form input{
+    background-color: transparent !important;
+    border: 0 !important;
+    border-radius: 0 !important;
+    border-bottom:2px solid black !important;
+    color:black !important;
+    
+}
