@@ -65,7 +65,7 @@ const GetWeatherData = (props:any) => {
 
          const getDefaultData = () =>
     {
-        axios.get(`http://api.openweathermap.org/data/2.5/weather?q=Pune,IN&appid=${API_Key}`)
+        axios.get(`https://api.openweathermap.org/data/2.5/weather?q=Pune,IN&appid=${API_Key}`)
         .then(res=>{setcity(city => `${res.data.name},${res.data.sys.country}`);
         setcountry(country => res.data.sys.country);
         setweatherDescription(weatherDescription => res.data.weather[0].description);
@@ -86,7 +86,7 @@ const GetWeatherData = (props:any) => {
             const countrynm = e.target.country.value;
             if (citynm && countrynm) {
      
-                axios.get(`http://api.openweathermap.org/data/2.5/weather?q=${citynm},${countrynm}&appid=${API_Key}`).
+                axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${citynm},${countrynm}&appid=${API_Key}`).
                     then(res => {
                         setcity(city => `${res.data.name},${res.data.sys.country}`);
                         setcountry(country => res.data.sys.country);
