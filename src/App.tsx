@@ -16,7 +16,7 @@ function App() {
       
       <Navbar></Navbar>
       <Switch>
-        <Route exact path="/" component={TestComponent}/>
+        <Route exact path="/" component={ToDo}/>
         <Route path="/Todo" component={ToDo}/>
         <Route path="/WeatherInfo" component={MainWeather}/>
       </Switch>
