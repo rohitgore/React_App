@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import '../Component/Taskitems.scss';
+import './Taskitems.scss';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 
 interface List

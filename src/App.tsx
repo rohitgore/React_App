@@ -9,8 +9,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import Navbar from './Navigation/Navbar';
 import TestComponent from './TestComponent';
-import MainWeather from './app_component/MainWeather.component';
-import ToDo from './Component/ToDo';
+import MainWeather from './Weather_component/MainWeather.component';
+import ToDo from './Todo_Component/ToDo';
 
 function App() {
   return (

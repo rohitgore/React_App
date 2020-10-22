@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import '../Component/Taskinfo.scss'
+import './Taskinfo.scss'
 import Taskitems from './Taskitems'
 
 interface taskvalue
