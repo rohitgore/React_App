@@ -65,7 +65,7 @@ const GetWeatherData = (props: any) => {
 
     const getDefaultData = () =>
     {
-        axios.get(`http://api.openweathermap.org/data/2.5/weather?q=Mumbai,IN&appid=${API_Key}`)
+        axios.get(`https://api.openweathermap.org/data/2.5/weather?q=Mumbai,IN&appid=${API_Key}`)
         .then(res=>{setcity(city => `${res.data.name},${res.data.sys.country}`);
         setcountry(country => res.data.sys.country);
         setweatherDescription(weatherDescription => res.data.weather[0].description);
